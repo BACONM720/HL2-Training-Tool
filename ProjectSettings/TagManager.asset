@@ -3,7 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BlackPieces
+  - pawnW
+  - rookW
+  - bishopW
+  - queenW
+  - knightW
+  - pawnB
+  - rookB
+  - bishopB
+  - knightB
+  - queenB
+  - pawnPosW
+  - BasketBall
+  - bb1
   layers:
   - Default
   - TransparentFX

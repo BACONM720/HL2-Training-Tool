@@ -1,0 +1,11 @@
+Model Information:
+* title:	Charger Head
+* source:	https://sketchfab.com/3d-models/charger-head-2501aa6e75044e339b8024b08b023d56
+* author:	yoikuzaku (https://sketchfab.com/yoikuzaku)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Charger Head" (https://sketchfab.com/3d-models/charger-head-2501aa6e75044e339b8024b08b023d56) by yoikuzaku (https://sketchfab.com/yoikuzaku) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
