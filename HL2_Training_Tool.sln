@@ -1,9 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.MixedReality.Toolkit.Demos.UX.Interactables", "Microsoft.MixedReality.Toolkit.Demos.UX.Interactables.csproj", "{D694EC9F-D98A-AA6B-2FFF-7221AEC8A3E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.MixedReality.Toolkit.Examples", "Microsoft.MixedReality.Toolkit.Examples.csproj", "{976F51ED-848E-2CBB-8A3D-249213A52D62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.MixedReality.Toolkit.Extensions.SceneTransitionService", "Microsoft.MixedReality.Toolkit.Extensions.SceneTransitionService.csproj", "{23A3E3B8-B677-D067-AA47-24FCA9CB1419}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{11AFA67F-FFB6-0C79-BD0A-F5404BDED799}"
 EndProject
@@ -33,6 +35,10 @@ Global
 		{976F51ED-848E-2CBB-8A3D-249213A52D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{976F51ED-848E-2CBB-8A3D-249213A52D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{976F51ED-848E-2CBB-8A3D-249213A52D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A3E3B8-B677-D067-AA47-24FCA9CB1419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A3E3B8-B677-D067-AA47-24FCA9CB1419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A3E3B8-B677-D067-AA47-24FCA9CB1419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A3E3B8-B677-D067-AA47-24FCA9CB1419}.Release|Any CPU.Build.0 = Release|Any CPU
 		{11AFA67F-FFB6-0C79-BD0A-F5404BDED799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{11AFA67F-FFB6-0C79-BD0A-F5404BDED799}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11AFA67F-FFB6-0C79-BD0A-F5404BDED799}.Release|Any CPU.ActiveCfg = Release|Any CPU

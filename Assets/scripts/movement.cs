@@ -17,15 +17,20 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RemoveRigid();
+        if (g.transform.position == goal.position)
+        {
+            RemoveRigid();
+        }
       
     }
 
     public void RemoveRigid()
     {
-        if(g.transform.position == goal.position)
-        {
-            Destroy(g.GetComponent<Rigidbody>());
-        }
+       
+       //g.GetComponent<Rigidbody>().detectCollisions = false;
+       //g.GetComponent<Rigidbody>().useGravity = false;
+       Increase_Size.FreezePos2(g.GetComponent<Rigidbody>());
+
+
     }
 }

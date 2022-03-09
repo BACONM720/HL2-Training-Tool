@@ -419,7 +419,7 @@ MonoBehaviour:
   m_remoteHostPort: 8265
   m_maxBitrate: 20000
   m_videoCodec: 0
-  m_enableAudio: 0
+  m_enableAudio: 1
 --- !u!114 &-1238968979422954014
 MonoBehaviour:
   m_ObjectHideFlags: 0

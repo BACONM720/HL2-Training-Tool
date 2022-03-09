@@ -36,6 +36,12 @@ public class Increase_Size : MonoBehaviour
         r.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
     }
 
+    public static void FreezePos2(Rigidbody r)
+    {
+
+        r.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
+    }
+
     public static void unFreezePos(Rigidbody r)
     {
         r.constraints = RigidbodyConstraints.None;

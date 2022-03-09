@@ -13,24 +13,96 @@ MonoBehaviour:
   m_Name: MRTKExamplesHubSceneSystemProfile
   m_EditorClassIdentifier: 
   isCustomProfile: 1
-  useManagerScene: 0
+  useManagerScene: 1
   managerScene:
-    Name: ManagerScene
-    Path: Assets/Scenes/ManagerScene.unity
+    Name: Manager Scene
+    Path: Assets/Scenes/Manager Scene.unity
     Included: 1
-    BuildIndex: -1
+    BuildIndex: 0
     Tag: Untagged
-    Asset: {fileID: 102900000, guid: 2a2d2de710129954793aaa6e8a032165, type: 3}
+    Asset: {fileID: 102900000, guid: b47292c1b89940244b8a53308a6b999a, type: 3}
   useLightingScene: 0
-  defaultLightingSceneIndex: -1
+  defaultLightingSceneIndex: 0
   lightingScenes: []
   contentScenes:
-  - Name: Resizing_and_Rotating
-    Path: Assets/Scenes/Manipulating HoloGrams/Resizing_and_Rotating.unity
+  - Name: Introduction
+    Path: Assets/Scenes/Introduction/Introduction.unity
+    Included: 1
+    BuildIndex: 4
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: ce3c80be4f0e49a458f3a16c40cf4e53, type: 3}
+  - Name: MenuIntro
+    Path: Assets/Scenes/Introduction/MenuIntro.unity
+    Included: 1
+    BuildIndex: 5
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: 77536f328d134104a8af8800d4e3e637, type: 3}
+  - Name: HoloInteractionTutorial
+    Path: Assets/Scenes/Introduction/HoloInteractionTutorial.unity
+    Included: 1
+    BuildIndex: 6
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: 1b39b5c419b64d14282e1a0f4b8659e2, type: 3}
+  - Name: IndicatorTutorial
+    Path: Assets/Scenes/Introduction/IndicatorTutorial.unity
+    Included: 1
+    BuildIndex: 7
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: a18dcc1c2ca366e41aa2e2b63001e127, type: 3}
+  - Name: Menu
+    Path: Assets/Scenes/Menu/Menu.unity
     Included: 1
     BuildIndex: 3
     Tag: Untagged
+    Asset: {fileID: 102900000, guid: bfecc86605e4b3742914292a4771d1de, type: 3}
+  - Name: Moving_and_Placing
+    Path: Assets/Scenes/Manipulating HoloGrams/Moving_and_Placing.unity
+    Included: 1
+    BuildIndex: 1
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: e28af01b48e63f44c9698f9b28e48f11, type: 3}
+  - Name: Resizing_and_Rotating
+    Path: Assets/Scenes/Manipulating HoloGrams/Resizing_and_Rotating.unity
+    Included: 1
+    BuildIndex: 2
+    Tag: Untagged
     Asset: {fileID: 102900000, guid: 74758536eef5fbe4eb858f84b7062bf1, type: 3}
+  - Name: AirTap
+    Path: Assets/Scenes/Manipulating HoloGrams/AirTap.unity
+    Included: 1
+    BuildIndex: 8
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: 186e34b2bec04434da89ca4b58e3f22d, type: 3}
+  - Name: Voice_Controls
+    Path: Assets/Scenes/Manipulating HoloGrams/Voice_Controls.unity
+    Included: 1
+    BuildIndex: 9
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: e19ef6e35de9ccd4493716d998f7660b, type: 3}
+  - Name: DwellExample
+    Path: Assets/Scenes/Manipulating HoloGrams/DwellExample.unity
+    Included: 1
+    BuildIndex: 10
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: 214a3eff40efe654484f95e0bcb7d473, type: 3}
+  - Name: Adjusting the HoloLens
+    Path: Assets/Scenes/You and Your Hl2/Adjusting the HoloLens.unity
+    Included: 1
+    BuildIndex: 11
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: 70c3e564c78d9b642b228c9d08da5a97, type: 3}
+  - Name: CleaningMaintainenece
+    Path: Assets/Scenes/You and Your Hl2/CleaningMaintainenece.unity
+    Included: 1
+    BuildIndex: 12
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: 897ee41463f52b54ca3c82ca65eaf9b3, type: 3}
+  - Name: PowerButtonsCharge
+    Path: Assets/Scenes/You and Your Hl2/PowerButtonsCharge.unity
+    Included: 1
+    BuildIndex: 13
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: af83d88f7e1d1264e92ab1618c8bfd38, type: 3}
   permittedLightingSceneComponentTypes:
   - reference: UnityEngine.Transform, UnityEngine.CoreModule
   - reference: UnityEngine.GameObject, UnityEngine.CoreModule

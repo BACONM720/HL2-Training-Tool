@@ -12,6 +12,7 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
     {
         public Transform target;
         public Transform partToRotate;
+        public int x;
    
 
 
@@ -22,7 +23,7 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
 
         public void Rotate()
         {
-            partToRotate.RotateAround(target.position, Vector3.forward, -20 * Time.deltaTime);
+            partToRotate.RotateAround(target.position, Vector3.forward, x * Time.deltaTime);
         }
     }
 }

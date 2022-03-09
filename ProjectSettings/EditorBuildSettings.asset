@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ManagerScene.unity
-    guid: 2a2d2de710129954793aaa6e8a032165
-  - enabled: 1
+    path: Assets/Scenes/Manager Scene.unity
+    guid: b47292c1b89940244b8a53308a6b999a
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/Manipulating HoloGrams/Resizing_and_Rotating.unity
     guid: 74758536eef5fbe4eb858f84b7062bf1
   - enabled: 0
@@ -71,6 +74,39 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Manipulating HoloGrams/Resizing_and_Rotating.unity
     guid: 74758536eef5fbe4eb858f84b7062bf1
+  - enabled: 1
+    path: Assets/Scenes/Menu/Menu.unity
+    guid: bfecc86605e4b3742914292a4771d1de
+  - enabled: 1
+    path: Assets/Scenes/Introduction/Introduction.unity
+    guid: ce3c80be4f0e49a458f3a16c40cf4e53
+  - enabled: 1
+    path: Assets/Scenes/Introduction/MenuIntro.unity
+    guid: 77536f328d134104a8af8800d4e3e637
+  - enabled: 1
+    path: Assets/Scenes/Introduction/HoloInteractionTutorial.unity
+    guid: 1b39b5c419b64d14282e1a0f4b8659e2
+  - enabled: 1
+    path: Assets/Scenes/Introduction/IndicatorTutorial.unity
+    guid: a18dcc1c2ca366e41aa2e2b63001e127
+  - enabled: 1
+    path: Assets/Scenes/Manipulating HoloGrams/AirTap.unity
+    guid: 186e34b2bec04434da89ca4b58e3f22d
+  - enabled: 1
+    path: Assets/Scenes/Manipulating HoloGrams/Voice_Controls.unity
+    guid: e19ef6e35de9ccd4493716d998f7660b
+  - enabled: 1
+    path: Assets/Scenes/Manipulating HoloGrams/DwellExample.unity
+    guid: 214a3eff40efe654484f95e0bcb7d473
+  - enabled: 1
+    path: Assets/Scenes/You and Your Hl2/Adjusting the HoloLens.unity
+    guid: 70c3e564c78d9b642b228c9d08da5a97
+  - enabled: 1
+    path: Assets/Scenes/You and Your Hl2/CleaningMaintainenece.unity
+    guid: 897ee41463f52b54ca3c82ca65eaf9b3
+  - enabled: 1
+    path: Assets/Scenes/You and Your Hl2/PowerButtonsCharge.unity
+    guid: af83d88f7e1d1264e92ab1618c8bfd38
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c1cb02af566624c4f8778d26e69dba56, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f22ef9e2597d4564e8f2456dd33e3307, type: 2}

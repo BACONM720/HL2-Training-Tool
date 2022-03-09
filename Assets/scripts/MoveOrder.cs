@@ -1,3 +1,4 @@
+using MRTK.Tutorials.GettingStarted;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -112,6 +113,8 @@ public class MoveOrder : MonoBehaviour
 
         if (Queen.transform.position == QueenPos.transform.position)
         {
+            Queen.GetComponent<PartAssemblyController>().enabled = false;
+            Queen.transform.rotation = new Quaternion(180f, -270, 0.238f,0f) ;
             QueenPos.SetActive(false);
             RookPos.SetActive(true);
             RookB.transform.position = Vector3.Lerp(RookB.transform.position, RookBPos.transform.position, speed * Time.deltaTime);
