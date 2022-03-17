@@ -1867,7 +1867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 896172366463588203, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: contentScene.BuildIndex
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2462912714933906364, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: m_Mesh
@@ -1895,7 +1895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503379971327143838, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: contentScene.BuildIndex
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3753430887112709864, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2011,7 +2011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7574203138610932942, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: contentScene.BuildIndex
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8109336780239899154, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: contentScene.Tag
@@ -2035,7 +2035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8109336780239899154, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: contentScene.BuildIndex
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8258662681550141325, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: m_RootOrder

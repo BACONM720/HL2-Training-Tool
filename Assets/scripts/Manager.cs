@@ -11,9 +11,9 @@ public class Manager : MonoBehaviour
 	public GameObject ScaleObjs;
 	public GameObject RotateObjs;
 	public GameObject MenuScale;
-	public GameObject BothObjs;
 	public GameObject Check;
-	public GameObject Shark;
+	public GameObject next;
+
 
 	// Start is called before the first frame update
 	void Start()
@@ -37,26 +37,14 @@ public class Manager : MonoBehaviour
 
 			if (Car.GetComponent<RotateControl>().correct)
 			{
-				/*Car.transform.rotation = Car1.transform.rotation;
-				Car.GetComponent<BoundsControl>().enabled = false;*/
-				StartCoroutine(makeObjectInActive(RotateObjs, BothObjs));
-
-
+			
+				StartCoroutine(makeObjectInActive(RotateObjs,null));
+				next.SetActive(true);
 			}
 		}
 
-		if (Shark != null)
-		{
-			if (Shark.transform.localScale.x < 0.5 && Shark.transform.localRotation.eulerAngles.x < 0) {
-				Shark.GetComponent<ScaleHandlesConfiguration>().ShowScaleHandles = false;
-				if (Shark.transform.localRotation.eulerAngles.x > 0 && Shark.transform.localRotation.eulerAngles.y < 90 || Shark.transform.localRotation.eulerAngles.y > 90 && Shark.transform.localRotation.eulerAngles.z < 0 || Shark.transform.localRotation.eulerAngles.z > 0)
-				{
-						StartCoroutine(makeObjectInActive(BothObjs, null));
-				}
-			}
-		}
-         
-			}		
+		
+         }		
 			
 			
 
@@ -72,37 +60,12 @@ public class Manager : MonoBehaviour
 		yield return new WaitForSeconds(1);
 	
 		j.SetActive(true);
+
 		Check.SetActive(false);
 		
 		
 	
 
 			}
-		/*
-		public IEnumerator FadeOutObject(GameObject objToFade)
-		{
-			// Get the mesh renderer of the object
-			MeshRenderer meshRenderer = objToFade.GetComponent<MeshRenderer>();
-
-			// Get the color value of the main material
-			Color color = meshRenderer.materials[0].color;
-
-
-			// While the color's alpha value is above 0
-			while (color.a > 0)
-			{
-				// Reduce the color's alpha value
-				color.a -= 0.f;
-
-				// Apply the modified color to the object's mesh renderer
-				meshRenderer.materials[0].color = color;
-
-				// Wait for the frame to update
-				yield return new WaitForEndOfFrame();
-			}
-
-			// If the material's color's alpha value is less than or equal to 0, end the coroutine
-			yield return new WaitUntil(() => meshRenderer.materials[0].color.a <= 0f);
-		}
-		*/
+	
 	}

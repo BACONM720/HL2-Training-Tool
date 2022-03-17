@@ -494,13 +494,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296839448}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5, y: -0.2, z: 5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.544, y: -0.2, z: 1.402}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.3}
   m_Children: []
   m_Father: {fileID: 617510399}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1433888603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -514,23 +514,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 896172366463588203, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: contentScene.Name
-      value: DwellExample
+      value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 896172366463588203, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: contentScene.Path
-      value: Assets/Scenes/Manipulating HoloGrams/DwellExample.unity
+      value: Assets/Scenes/Menu/Menu.unity
       objectReference: {fileID: 0}
     - target: {fileID: 896172366463588203, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: contentScene.Asset
       value: 
-      objectReference: {fileID: 102900000, guid: 214a3eff40efe654484f95e0bcb7d473, type: 3}
+      objectReference: {fileID: 102900000, guid: bfecc86605e4b3742914292a4771d1de, type: 3}
     - target: {fileID: 896172366463588203, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: contentScene.Included
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 896172366463588203, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: contentScene.BuildIndex
-      value: 9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2462912714933906364, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: m_Mesh
@@ -558,7 +558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3503379971327143838, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: contentScene.BuildIndex
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3753430887112709864, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -674,7 +674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7574203138610932942, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: contentScene.BuildIndex
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8109336780239899154, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: contentScene.Tag
@@ -698,7 +698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8109336780239899154, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: contentScene.BuildIndex
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8258662681550141325, guid: b78b413c1b917fd49915bf4005fb66ce, type: 3}
       propertyPath: m_RootOrder
@@ -1033,13 +1033,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601822154}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5, y: -0.2, z: 5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.544, y: -0.2, z: 1.402}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.3}
   m_Children: []
   m_Father: {fileID: 617510399}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1601822159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83d9acc7968244a8886f3af591305bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeProfile: {fileID: 11400000, guid: 06c28c46a1cf2ac4f9e60a3dc9fe2f9e, type: 2}
+  activeProfile: {fileID: 11400000, guid: 7e7c962b9eb9dfa44993d5b2f2576752, type: 2}
 --- !u!4 &1770084368
 Transform:
   m_ObjectHideFlags: 0
@@ -1191,7 +1191,7 @@ Camera:
   m_GameObject: {fileID: 1837605710}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1329,11 +1329,19 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3466374341365966204, guid: aef27e91ffd80b8419fddd2e0229cb75, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3466374341365966204, guid: aef27e91ffd80b8419fddd2e0229cb75, type: 3}
       propertyPath: Dimensions
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3466374341365966204, guid: aef27e91ffd80b8419fddd2e0229cb75, type: 3}
       propertyPath: enabledOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3466374341365966204, guid: aef27e91ffd80b8419fddd2e0229cb75, type: 3}
+      propertyPath: voiceRequiresFocus
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3466374341365966204, guid: aef27e91ffd80b8419fddd2e0229cb75, type: 3}
@@ -1483,6 +1491,10 @@ PrefabInstance:
     - target: {fileID: 6293782215183371582, guid: aef27e91ffd80b8419fddd2e0229cb75, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293782215702940608, guid: aef27e91ffd80b8419fddd2e0229cb75, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6293782215702940639, guid: aef27e91ffd80b8419fddd2e0229cb75, type: 3}
       propertyPath: m_Name

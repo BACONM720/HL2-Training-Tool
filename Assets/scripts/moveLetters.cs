@@ -21,20 +21,20 @@ public class moveLetters : MonoBehaviour
     }
 
     IEnumerator moveLetter()
-    {   Rigidbody[] allChildren = letters.GetComponentsInChildren<Rigidbody>();
+    {  // Rigidbody[] allChildren = letters.GetComponentsInChildren<Rigidbody>();
        
-        yield return new WaitForSecondsRealtime(6);
-        foreach(Rigidbody child in allChildren)
-        {
-            float speed = 110;
+       //yield return new WaitForSecondsRealtime(6);
+      //  foreach(Rigidbody child in allChildren)
+       // {
+        //    float speed = 110;
 
-            child.isKinematic = false;
+        //    child.isKinematic = false;
 
-            Vector3 force = transform.forward;
-            force = new Vector3(0, 0 , force.z);
-            child.AddForce(force * speed);
-        }
-        yield return new WaitForSeconds(5);
+         //   Vector3 force = transform.forward;
+          //  force = new Vector3(0, 0 , force.z);
+          //  child.AddForce(force * speed);
+        //}
+        yield return new WaitForSeconds(10);
         letters.SetActive(false);
         playButton.SetActive(true);
 

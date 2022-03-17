@@ -26,7 +26,8 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking
 
         private void Update()
         {
-            StartCoroutine(RotateTarget());
+            transform.eulerAngles = transform.eulerAngles + RotateByEulerAngles * speed;
+            //StartCoroutine(RotateTarget());
         }
         /// <summary>
         /// Rotate game object based on specified rotation speed and Euler angles.

@@ -53,8 +53,8 @@ public class AirTapController : MonoBehaviour
                cat.SetActive(false);
                catPos.SetActive(false);
                panel1.SetActive(false);
-             nearMenu.SetActive(false);
-
+               nearMenu.SetActive(false);
+              
                StartCoroutine(makeObjectInActive());
                BasketBall.SetActive(true);
               
@@ -67,7 +67,7 @@ public class AirTapController : MonoBehaviour
         }
     public IEnumerator makeObjectInActive()
     {
-       
+   
         Check.SetActive(true);
         
         yield return new WaitForSecondsRealtime(3);

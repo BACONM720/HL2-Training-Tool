@@ -129,8 +129,10 @@ PlayerSettings:
     Others: 1
   bundleVersion: 0.1
   preloadedAssets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: -979720277390277816, guid: f22ef9e2597d4564e8f2456dd33e3307, type: 2}
-  - {fileID: 11400000, guid: 57b3eddeb3922244abd2ab3ec431a629, type: 2}
   - {fileID: 2387429290524775996, guid: c1cb02af566624c4f8778d26e69dba56, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -613,14 +615,14 @@ PlayerSettings:
   wsaImages: {}
   metroTileShortName: HL2_Training_Tool
   metroTileShowName: 0
-  metroMediumTileShowName: 0
+  metroMediumTileShowName: 1
   metroLargeTileShowName: 0
   metroWideTileShowName: 0
   metroSupportStreamingInstall: 0
   metroLastRequiredScene: 0
   metroDefaultTileSize: 1
   metroTileForegroundText: 2
-  metroTileBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21568628, a: 0}
+  metroTileBackgroundColor: {r: 0.251068, g: 0.41003832, b: 0.5849056, a: 0}
   metroSplashScreenBackgroundColor: {r: 0.12941177, g: 0.17254902, b: 0.21568628, a: 1}
   metroSplashScreenUseBackgroundColor: 0
   platformCapabilities:

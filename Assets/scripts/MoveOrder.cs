@@ -13,7 +13,6 @@ public class MoveOrder : MonoBehaviour
     public GameObject Bishop1;
     public GameObject Bishop2;
     public GameObject Rook;
-    public GameObject Queen;
 
     public GameObject pawn1B;
     public GameObject pawn2B;
@@ -33,7 +32,7 @@ public class MoveOrder : MonoBehaviour
     public GameObject Bishop1Pos;
     public GameObject Bishop2Pos;
     public GameObject RookPos;
-    public GameObject QueenPos;
+
 
     public GameObject pawn1BPos;
     public GameObject pawn2BPos;
@@ -47,6 +46,7 @@ public class MoveOrder : MonoBehaviour
     public GameObject RookBPos;
     public GameObject QueenBPos;
 
+    public GameObject nextBanner;
 
     public int speed;
 
@@ -58,10 +58,11 @@ public class MoveOrder : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (pawn1.transform.position == pawn1Pos.transform.position)
         {
+            pawn1.transform.position = pawn1Pos.transform.position;
             pawn1Pos.SetActive(false);
             Bishop1Pos.SetActive(true);
             pawn1B.transform.position = Vector3.Lerp(pawn1B.transform.position, pawn1BPos.transform.position, speed * Time.deltaTime);
@@ -69,6 +70,7 @@ public class MoveOrder : MonoBehaviour
 
         if(Bishop1.transform.position == Bishop1Pos.transform.position)
         {
+            Bishop1.transform.position = Bishop1Pos.transform.position;
             Bishop1Pos.SetActive(false);
             pawn2Pos.SetActive(true);
             Bishop1B.transform.position = Vector3.Lerp(Bishop1B.transform.position, Bishop1BPos.transform.position, speed * Time.deltaTime);
@@ -76,6 +78,7 @@ public class MoveOrder : MonoBehaviour
 
         if (pawn2.transform.position == pawn2Pos.transform.position)
         {
+            pawn2.transform.position = pawn2Pos.transform.position;
             pawn2Pos.SetActive(false);
             Knight1Pos.SetActive(true);
             pawn2B.transform.position = Vector3.Lerp(pawn2B.transform.position, pawn2BPos.transform.position, speed * Time.deltaTime);
@@ -83,14 +86,17 @@ public class MoveOrder : MonoBehaviour
 
         if (Knight1.transform.position == Knight1Pos.transform.position)
         {
+            Knight1.transform.position = Knight1Pos.transform.position;
             Knight1Pos.SetActive(false);
-            pawn3Pos.SetActive(true);
-
+           
             StartCoroutine(MoveKnight1());
-             }
+         
+            pawn3Pos.SetActive(true);
+         }
 
         if (pawn3.transform.position == pawn3Pos.transform.position)
         {
+            pawn3.transform.position = pawn3Pos.transform.position;
             pawn3Pos.SetActive(false);
             Knight2Pos.SetActive(true);
             pawn3B.transform.position = Vector3.Lerp(pawn3B.transform.position, pawn3BPos.transform.position, speed * Time.deltaTime);
@@ -98,24 +104,18 @@ public class MoveOrder : MonoBehaviour
 
         if (Knight2.transform.position == Knight2Pos.transform.position)
         {
+            Knight2.transform.position = Knight2Pos.transform.position;
             Knight2Pos.SetActive(false);
-            Bishop2Pos.SetActive(true);
             StartCoroutine(MoveKnight2());
+   
+            Bishop2Pos.SetActive(true);
              }
 
         
         if (Bishop2.transform.position == Bishop2Pos.transform.position)
         {
+            Bishop2.transform.position = Bishop2Pos.transform.position;
             Bishop2Pos.SetActive(false);
-            QueenPos.SetActive(true);
-            Bishop2B.transform.position = Vector3.Lerp(Bishop2B.transform.position, Bishop2BPos.transform.position, speed * Time.deltaTime);
-        }
-
-        if (Queen.transform.position == QueenPos.transform.position)
-        {
-            Queen.GetComponent<PartAssemblyController>().enabled = false;
-            Queen.transform.rotation = new Quaternion(180f, -270, 0.238f,0f) ;
-            QueenPos.SetActive(false);
             RookPos.SetActive(true);
             RookB.transform.position = Vector3.Lerp(RookB.transform.position, RookBPos.transform.position, speed * Time.deltaTime);
         }
@@ -123,8 +123,10 @@ public class MoveOrder : MonoBehaviour
       
         if (Rook.transform.position == RookPos.transform.position)
         {
+            Rook.transform.position = RookPos.transform.position;
             RookPos.SetActive(false);
             QueenB.transform.position = Vector3.Lerp(QueenB.transform.position, QueenBPos.transform.position, speed * Time.deltaTime);
+            nextBanner.SetActive(true);
         }
 
     }
@@ -137,6 +139,8 @@ public class MoveOrder : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         Knight1BinPos.transform.position = Vector3.Lerp(Knight1B.transform.position, Knight1BPos.transform.position, speed * 150* Time.deltaTime);
+
+        yield break;
         
 
     }
@@ -149,6 +153,6 @@ public class MoveOrder : MonoBehaviour
 
         Knight2BinPos.transform.position = Vector3.Lerp(Knight2B.transform.position, Knight2BPos.transform.position, speed * 150 * Time.deltaTime);
 
-
+        yield break;
     }
 }

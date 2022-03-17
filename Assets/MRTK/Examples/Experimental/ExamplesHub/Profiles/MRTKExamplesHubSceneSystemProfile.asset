@@ -82,27 +82,33 @@ MonoBehaviour:
   - Name: DwellExample
     Path: Assets/Scenes/Manipulating HoloGrams/DwellExample.unity
     Included: 1
-    BuildIndex: 10
+    BuildIndex: -1
     Tag: Untagged
     Asset: {fileID: 102900000, guid: 214a3eff40efe654484f95e0bcb7d473, type: 3}
   - Name: Adjusting the HoloLens
     Path: Assets/Scenes/You and Your Hl2/Adjusting the HoloLens.unity
     Included: 1
-    BuildIndex: 11
+    BuildIndex: 10
     Tag: Untagged
     Asset: {fileID: 102900000, guid: 70c3e564c78d9b642b228c9d08da5a97, type: 3}
   - Name: CleaningMaintainenece
     Path: Assets/Scenes/You and Your Hl2/CleaningMaintainenece.unity
     Included: 1
-    BuildIndex: 12
+    BuildIndex: 11
     Tag: Untagged
     Asset: {fileID: 102900000, guid: 897ee41463f52b54ca3c82ca65eaf9b3, type: 3}
   - Name: PowerButtonsCharge
     Path: Assets/Scenes/You and Your Hl2/PowerButtonsCharge.unity
     Included: 1
-    BuildIndex: 13
+    BuildIndex: 12
     Tag: Untagged
     Asset: {fileID: 102900000, guid: af83d88f7e1d1264e92ab1618c8bfd38, type: 3}
+  - Name: Mars Rover Demo
+    Path: Assets/Scenes/Mars Rover Demo.unity
+    Included: 1
+    BuildIndex: 13
+    Tag: Untagged
+    Asset: {fileID: 102900000, guid: 7c63e9bedb3fbd041bc73c2a730b0163, type: 3}
   permittedLightingSceneComponentTypes:
   - reference: UnityEngine.Transform, UnityEngine.CoreModule
   - reference: UnityEngine.GameObject, UnityEngine.CoreModule

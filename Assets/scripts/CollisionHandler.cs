@@ -8,6 +8,7 @@ public class CollisionHandler : MonoBehaviour
     public GameObject bb2;
     public GameObject bb3;
     public GameObject Check;
+    public GameObject next;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,9 +44,11 @@ public class CollisionHandler : MonoBehaviour
     {
 
         Check.SetActive(true);
+        
+
 
         yield return new WaitForSecondsRealtime(3);
-
+        next.SetActive(true);
         Destroy(Check);
 
 
