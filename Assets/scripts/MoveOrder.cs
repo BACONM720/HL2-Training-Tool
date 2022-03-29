@@ -62,26 +62,20 @@ public class MoveOrder : MonoBehaviour
     {
         if (pawn1.transform.position == pawn1Pos.transform.position)
         {
-            pawn1.transform.position = pawn1Pos.transform.position;
-            pawn1Pos.SetActive(false);
-            Bishop1Pos.SetActive(true);
-            pawn1B.transform.position = Vector3.Lerp(pawn1B.transform.position, pawn1BPos.transform.position, speed * Time.deltaTime);
+            MoveSet(pawn1, pawn1Pos, Bishop1Pos, pawn1B, pawn1BPos);
+         
         }
 
         if(Bishop1.transform.position == Bishop1Pos.transform.position)
         {
-            Bishop1.transform.position = Bishop1Pos.transform.position;
-            Bishop1Pos.SetActive(false);
-            pawn2Pos.SetActive(true);
-            Bishop1B.transform.position = Vector3.Lerp(Bishop1B.transform.position, Bishop1BPos.transform.position, speed * Time.deltaTime);
+            MoveSet(Bishop1, Bishop1Pos, pawn2Pos, Bishop1B, Bishop1BPos);
+      
         }
 
         if (pawn2.transform.position == pawn2Pos.transform.position)
         {
-            pawn2.transform.position = pawn2Pos.transform.position;
-            pawn2Pos.SetActive(false);
-            Knight1Pos.SetActive(true);
-            pawn2B.transform.position = Vector3.Lerp(pawn2B.transform.position, pawn2BPos.transform.position, speed * Time.deltaTime);
+            MoveSet(pawn2, pawn2Pos, Knight1Pos, pawn2B, pawn2BPos);
+          
         }
 
         if (Knight1.transform.position == Knight1Pos.transform.position)
@@ -92,14 +86,13 @@ public class MoveOrder : MonoBehaviour
             StartCoroutine(MoveKnight1());
          
             pawn3Pos.SetActive(true);
-         }
+            Increase_Size.FreezePos2(Knight1.GetComponent<Rigidbody>());
+        }
 
         if (pawn3.transform.position == pawn3Pos.transform.position)
         {
-            pawn3.transform.position = pawn3Pos.transform.position;
-            pawn3Pos.SetActive(false);
-            Knight2Pos.SetActive(true);
-            pawn3B.transform.position = Vector3.Lerp(pawn3B.transform.position, pawn3BPos.transform.position, speed * Time.deltaTime);
+            MoveSet(pawn3, pawn3Pos, Knight2Pos, pawn3B, pawn3BPos);
+          
         }
 
         if (Knight2.transform.position == Knight2Pos.transform.position)
@@ -109,24 +102,25 @@ public class MoveOrder : MonoBehaviour
             StartCoroutine(MoveKnight2());
    
             Bishop2Pos.SetActive(true);
-             }
+            Increase_Size.FreezePos2(Knight2.GetComponent<Rigidbody>());
+        }
 
         
         if (Bishop2.transform.position == Bishop2Pos.transform.position)
         {
-            Bishop2.transform.position = Bishop2Pos.transform.position;
-            Bishop2Pos.SetActive(false);
-            RookPos.SetActive(true);
-            RookB.transform.position = Vector3.Lerp(RookB.transform.position, RookBPos.transform.position, speed * Time.deltaTime);
+            MoveSet(Bishop2, Bishop2Pos, RookPos, RookB, RookBPos);
+           
         }
 
       
         if (Rook.transform.position == RookPos.transform.position)
         {
-            Rook.transform.position = RookPos.transform.position;
+        
+            Rook.transform.SetPositionAndRotation(RookPos.transform.position, new Quaternion(0, 0, 0, 0));
             RookPos.SetActive(false);
             QueenB.transform.position = Vector3.Lerp(QueenB.transform.position, QueenBPos.transform.position, speed * Time.deltaTime);
             nextBanner.SetActive(true);
+            Increase_Size.FreezePos2(Rook.GetComponent<Rigidbody>());
         }
 
     }
@@ -155,4 +149,13 @@ public class MoveOrder : MonoBehaviour
 
         yield break;
     }
+    public void MoveSet(GameObject w, GameObject wp, GameObject wpn, GameObject b, GameObject bp)
+    {
+        w.transform.SetPositionAndRotation(wp.transform.position, new Quaternion(0, 0, 0, 0));
+        wp.SetActive(false);
+        wpn.SetActive(true);
+        b.transform.position = Vector3.Lerp(b.transform.position, bp.transform.position, speed * Time.deltaTime);
+        Increase_Size.FreezePos2(w.GetComponent<Rigidbody>());
+    }
 }
+

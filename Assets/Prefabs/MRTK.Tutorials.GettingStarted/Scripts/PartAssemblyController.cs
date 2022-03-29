@@ -12,7 +12,7 @@ namespace MRTK.Tutorials.GettingStarted
         [SerializeField] private Transform locationToPlace = default;
 
         private const float MinDistance = 0.001f;
-        private const float MaxDistance = 0.1f;
+        private const float MaxDistance = 0.05f;
 
         private bool isPunEnabled;
         private bool shouldCheckPlacement;
