@@ -18,6 +18,7 @@ TagManager:
   - pawnPosW
   - BasketBall
   - bb1
+  - pressableButton
   layers:
   - Default
   - TransparentFX

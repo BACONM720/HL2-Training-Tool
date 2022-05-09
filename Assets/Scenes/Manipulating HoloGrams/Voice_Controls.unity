@@ -821,9 +821,9 @@ PrefabInstance:
       propertyPath: m_text
       value: "<size=42><b>Voice Controls</b></size>\n\nThis exercise the use of voice
         controls.\nVoice controls if enabled can be a useful way of hands free interaction
-        with buttons, objects and more.\n\nTo complete the exercise: \n1. Say Select
-        while looking at the button\n2. Say Change Color while looking at the sphere\n3.
-        Say Go while looking at the Sphere.\n4. Press Next"
+        with buttons, objects and more.\n\nTo complete the exercise: \n1. Say \"Select\"
+        while looking at the button\n2. Say \"Change Color\" while looking at the
+        sphere\n3. Say \"Move Now\" while looking at the Sphere.\n4. Press Next"
       objectReference: {fileID: 0}
     - target: {fileID: 2113875699234556495, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
       propertyPath: m_fontSize
@@ -839,11 +839,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2652140712778390387, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 6
+      value: 6.2
       objectReference: {fileID: 0}
     - target: {fileID: 2652140712778390387, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.61
+      value: -3.82
       objectReference: {fileID: 0}
     - target: {fileID: 3378234012929652230, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
       propertyPath: m_SizeDelta.y
@@ -886,12 +886,16 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7614231225992287547, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614231225992287547, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 7614231225992287547, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.189
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 7614231225992287547, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -925,6 +929,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7614231226395134402, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25400007
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614231226555770156, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
+      propertyPath: m_text
+      value: Using Voice Controls
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614231226555770156, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614231226555770156, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614231226555770156, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614231226555770159, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.263
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614231226555770159, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.39
+      objectReference: {fileID: 0}
     - target: {fileID: 8239495094510916357, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -940,6 +972,10 @@ PrefabInstance:
     - target: {fileID: 8239495094510916357, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869052257615413832, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25410014
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44baa79b12480514a8c94d84975eb75b, type: 3}
@@ -1086,7 +1122,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - keyword: Go
+  - keyword: Move Now
     response:
       m_PersistentCalls:
         m_Calls:
@@ -1494,7 +1530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6293782215702940608, guid: aef27e91ffd80b8419fddd2e0229cb75, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6293782215702940639, guid: aef27e91ffd80b8419fddd2e0229cb75, type: 3}
       propertyPath: m_Name

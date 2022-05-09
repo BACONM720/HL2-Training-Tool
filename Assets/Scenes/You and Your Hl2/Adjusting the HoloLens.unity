@@ -559,6 +559,36 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7404147990567025046, guid: 590e3dec4ae553c49b010b537c9ae7f0, type: 3}
+      propertyPath: m_text
+      value: 'Press play to begin the video.
+
+
+        The video gives an overview
+        of how to fit your HoloLens 2 appropriately.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404147990567025046, guid: 590e3dec4ae553c49b010b537c9ae7f0, type: 3}
+      propertyPath: m_fontSize
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404147990567025046, guid: 590e3dec4ae553c49b010b537c9ae7f0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404147990567025046, guid: 590e3dec4ae553c49b010b537c9ae7f0, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404147990567025046, guid: 590e3dec4ae553c49b010b537c9ae7f0, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404147990567025046, guid: 590e3dec4ae553c49b010b537c9ae7f0, type: 3}
+      propertyPath: m_enableVertexGradient
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7614231224962994365, guid: 590e3dec4ae553c49b010b537c9ae7f0, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -610,6 +640,26 @@ PrefabInstance:
     - target: {fileID: 7614231225992287547, guid: 590e3dec4ae553c49b010b537c9ae7f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614231226555770156, guid: 590e3dec4ae553c49b010b537c9ae7f0, type: 3}
+      propertyPath: m_text
+      value: Adjusting the HoloLens - Video
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614231226555770156, guid: 590e3dec4ae553c49b010b537c9ae7f0, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614231226555770156, guid: 590e3dec4ae553c49b010b537c9ae7f0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614231226555770156, guid: 590e3dec4ae553c49b010b537c9ae7f0, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614231226555770159, guid: 590e3dec4ae553c49b010b537c9ae7f0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.277
       objectReference: {fileID: 0}
     - target: {fileID: 7851644918354808286, guid: 590e3dec4ae553c49b010b537c9ae7f0, type: 3}
       propertyPath: m_AnchorMax.y

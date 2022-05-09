@@ -45,8 +45,8 @@ MonoBehaviour:
       description: Toggle Diagnostics
       axisConstraint: 0
   - localizationKey: 
-    keyword: Go
-    keyCode: 0
+    keyword: Move Now
+    keyCode: 9
     action:
       id: 0
       description: Toggle Diagnostics

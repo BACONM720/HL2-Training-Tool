@@ -20,13 +20,18 @@ public class AdjusManager : MonoBehaviour
         StartCoroutine(updateArrow());
 
     }
-
+    //simple method to hide one arrow then show the other after a set amount of time has passed
     IEnumerator updateArrow()
     {
+    //wait 10 seconds
        yield return new WaitForSecondsRealtime(10);
+        //hide the first arrow
         RotateArrowRight.SetActive(false);
+        //hide the arrows accompanying text
         signRight.SetActive(false);
+        //show the next arrow
         RotateArrowLeft.SetActive(true);
+        //show the accompanying text
         signLeft.SetActive(true);
 
     }

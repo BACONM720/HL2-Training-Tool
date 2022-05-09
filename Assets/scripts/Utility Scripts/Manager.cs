@@ -23,8 +23,10 @@ public class Manager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+		//check to make sure object is not null
     {if (Rose != null)
 		{
+			//if the size controller bool 'correct' is true then start the coroutine
 			if (Rose.GetComponent<size_controller>().correct)
 			{
 
@@ -32,9 +34,10 @@ public class Manager : MonoBehaviour
 
 			}
 		}
+	//check to make sure object isnt null 
 		if (Car != null)
 		{
-
+			//if the rotation controller bool 'correct' is true then start the coroutine and show the next prompt
 			if (Car.GetComponent<RotateControl>().correct)
 			{
 			
@@ -46,21 +49,20 @@ public class Manager : MonoBehaviour
 		
          }		
 			
-			
-
-
-
-     
-	public IEnumerator makeObjectInActive(GameObject g, GameObject j )
+		//coroutine to hide and show objects after waiting certain times
+		public IEnumerator makeObjectInActive(GameObject g, GameObject j )
 	{
+		//show checkmark
 		Check.SetActive(true);
+		//wait three seconds
 		yield return new WaitForSeconds(3);
+		//destroy object g
 		Destroy(g);
-		
+		//wait another second
 		yield return new WaitForSeconds(1);
-	
+		//show object j
 		j.SetActive(true);
-
+		//hide checkmark
 		Check.SetActive(false);
 		
 		

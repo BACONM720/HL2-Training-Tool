@@ -18,20 +18,25 @@ public class CollisionHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //check if all basketballs have been set to false
         if(bb1.activeSelf == false && bb2.activeSelf == false && bb3.activeSelf == false)
         {
+            //if so start the coroutine to show the next prompt
             StartCoroutine(makeObjectInActive());
         }
     }
 
+    //method to check for collisions with a trigger placed in basketball hoop
     public void OnTriggerEnter(Collider other)
     {
+        //if the tag is the first basketball then deactivate it and spawn the next two
         if(other.gameObject.tag == "bb1")
         {
             other.gameObject.SetActive(false);
             bb2.SetActive(true);
             bb3.SetActive(true);
         }
+        //else just deactivate whatever interacts with it, which should only be the other balls
         else
         {
             other.gameObject.SetActive(false);
@@ -39,14 +44,11 @@ public class CollisionHandler : MonoBehaviour
 
 
     }
-
+    //simple coroutine to make a checkmark appear, wait, then show the next prompt and hide the checkmark again
     public IEnumerator makeObjectInActive()
     {
 
         Check.SetActive(true);
-        
-
-
         yield return new WaitForSecondsRealtime(3);
         next.SetActive(true);
         Destroy(Check);

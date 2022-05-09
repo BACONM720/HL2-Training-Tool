@@ -1476,11 +1476,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 819176777127574435, guid: 0954df4ca39c48f4d952dc31274cc3d5, type: 3}
       propertyPath: m_text
-      value: "Below is a video menu:\nThis will provide visual an textual aid through
-        different activities. \nIt can be closed by pressing the close button in
-        the top right.\nIt can also be moved by grabbing it.\nThe video can also
-        be paused and started using the buttons located below the video panel.\nGive
-        it a try!!!\n"
+      value: "Below is a video menu:\nThis will provide visual aid through different
+        activities. \nIt can be closed by pressing the close button in the top right.\nIt
+        can also be moved by grabbing it.\nThe video can also be paused and started
+        using the buttons located below the video panel.\nGive it a try!!!\n"
       objectReference: {fileID: 0}
     - target: {fileID: 819176777127574435, guid: 0954df4ca39c48f4d952dc31274cc3d5, type: 3}
       propertyPath: m_fontSize

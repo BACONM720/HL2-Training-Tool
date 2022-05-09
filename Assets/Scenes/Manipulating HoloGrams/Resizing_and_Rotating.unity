@@ -767,7 +767,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ff77ea9b3039c4a875656752658dde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roseP: {fileID: 2131817823}
   correct: 0
 --- !u!1001 &372842443
 PrefabInstance:
@@ -2052,7 +2051,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 449329767778708957, guid: 7d0205a690bab784a9430f7e36df70ed, type: 3}
       propertyPath: m_Name
-      value: RoseBlue
+      value: RosePink
       objectReference: {fileID: 0}
     - target: {fileID: 4779387583285261060, guid: 7d0205a690bab784a9430f7e36df70ed, type: 3}
       propertyPath: m_RootOrder
@@ -2112,11 +2111,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 9199261849990390558, guid: 7d0205a690bab784a9430f7e36df70ed, type: 3}
---- !u!1 &2131817823 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 449329767778708957, guid: 7d0205a690bab784a9430f7e36df70ed, type: 3}
-  m_PrefabInstance: {fileID: 2092577610}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2131817824 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4779387583285261060, guid: 7d0205a690bab784a9430f7e36df70ed, type: 3}
